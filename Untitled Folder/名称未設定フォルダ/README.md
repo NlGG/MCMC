@@ -1,9 +1,7 @@
 # Bayesian Linear Regression Model
 --------------------------------
 
-このセクションでは、`BUGS 0.5`のマニュアルから引用した、ベイズによる簡単な線形回帰を用いてこのパッケージの特徴を説明する。この例は観測値
-
-The example describes a regression relationship between observations :math: $$ {x} = (1, 2, 3, 4, 5)^T $ ` and :math:`\bm{y} = (1, 3, 3, 3, 5)^\top` that can be expressed as
+このセクションでは、`BUGS 0.5`のマニュアルから引用した、ベイズによる単純線形回帰を用いてこのパッケージの特徴を説明する。この例は観測値x = (1, 2, 3, 4, 5)^T と y = (1, 3, 3, 3, 5)^Tとの間の回帰関係を次のように表現する。$ 5+1 $
 
     $ {y} &\sim \text{Normal}(\bm{\mu}, \sigma^2 \bm{I}) $
     $ {\mu} &= \bm{X} \bm{\beta} $
