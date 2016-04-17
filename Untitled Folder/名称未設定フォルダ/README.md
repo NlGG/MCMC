@@ -1,14 +1,12 @@
 # Bayesian Linear Regression Model
 --------------------------------
 
-このセクションでは、`BUGS 0.5`のマニュアルから引用した、ベイズによる簡単な線形回帰を用いてこのパッケージの特徴を説明する。
+このセクションでは、`BUGS 0.5`のマニュアルから引用した、ベイズによる簡単な線形回帰を用いてこのパッケージの特徴を説明する。この例は観測値
 
-In the sections that follow, the Bayesian simple linear regression example from the `BUGS 0.5` manual :cite:`spiegelhalter:1996:BIU` is used to illustrate features of the package.  The example describes a regression relationship between observations :math: $ {x} = (1, 2, 3, 4, 5)^T $ ` and :math:`\bm{y} = (1, 3, 3, 3, 5)^\top` that can be expressed as
+The example describes a regression relationship between observations :math: $$ {x} = (1, 2, 3, 4, 5)^T $ ` and :math:`\bm{y} = (1, 3, 3, 3, 5)^\top` that can be expressed as
 
-.. math::
-
-    \bm{y} &\sim \text{Normal}(\bm{\mu}, \sigma^2 \bm{I}) \\
-    \bm{\mu} &= \bm{X} \bm{\beta}
+    $ {y} &\sim \text{Normal}(\bm{\mu}, \sigma^2 \bm{I}) $
+    $ {\mu} &= \bm{X} \bm{\beta} $
 
 with prior distribution specifications
 
@@ -642,8 +640,3 @@ Command-line access is provided for all package functionality to aid in the deve
     sample!(model)                     # All blocks
 
 In this example, functions ``setinputs!``, ``setinits!``, and ``setsampler!`` allow the user to manually set the input node values, the initial values, and the sampling scheme form the ``model`` object, and would need to be called prior to ``logpdf`` and ``sample!``.  Updated model objects should be returned when called; otherwise, a problem with the supplied values may exist.  Method ``showall`` prints a detailed summary of all model nodes, their values, and attributes; ``logpdf`` sums the log-densities over nodes associated with a specified sampling block (second argument); and ``sample!`` generates an MCMC sample of values for the nodes.  Non-numeric results may indicate problems with distributional specifications in the second case or with sampling functions in the last case.  The block arguments are optional; and, if left unspecified, will cause the corresponding functions to be applied over all sampling blocks.  This allows testing of some or all of the samplers.
-
-```math
-\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
-\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-```
