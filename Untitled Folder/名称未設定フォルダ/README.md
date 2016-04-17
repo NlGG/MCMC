@@ -3,7 +3,7 @@
 
 このセクションでは、`BUGS 0.5`のマニュアルから引用した、ベイズによる簡単な線形回帰を用いてこのパッケージの特徴を説明する。
 
-In the sections that follow, the Bayesian simple linear regression example from the `BUGS 0.5` manual :cite:`spiegelhalter:1996:BIU` is used to illustrate features of the package.  The example describes a regression relationship between observations :math: $ {x} = (1, 2, 3, 4, 5)^T $` and :math:`\bm{y} = (1, 3, 3, 3, 5)^\top` that can be expressed as
+In the sections that follow, the Bayesian simple linear regression example from the `BUGS 0.5` manual :cite:`spiegelhalter:1996:BIU` is used to illustrate features of the package.  The example describes a regression relationship between observations :math: $ {x} = (1, 2, 3, 4, 5)^T $ ` and :math:`\bm{y} = (1, 3, 3, 3, 5)^\top` that can be expressed as
 
 .. math::
 
