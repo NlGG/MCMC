@@ -1,5 +1,9 @@
 # Mamba.jl
 
+[k](https://github.com/NlGG/MCMC/tree/master/Tutorial)
+[j](/Tutorial)
+[h](./Tutorial)
+
 このレポジトリはJuliaにおけるMCMC用パッケージであるMamba.jlの紹介・説明の日本語訳のためのものである。
 公式サイトは[Mamba.jl](https://mambajl.readthedocs.org/en/latest/tutorial.html#mcmc-simulation)である。
 -----------------------------------
