@@ -1,5 +1,9 @@
 # Mamba.jl
 
+[k](https://github.com/NlGG/MCMC/tree/master/Tutorial)
+[j](/Tutorial)
+[h](./Tutorial)
+
 このレポジトリはJuliaにおけるMCMC用パッケージであるMamba.jlの紹介・説明の日本語訳のためのものである。
 公式サイトは[Mamba.jl](https://mambajl.readthedocs.org/en/latest/tutorial.html#mcmc-simulation)である。
 -----------------------------------
@@ -10,9 +14,6 @@ Mambaは、MCMCを介して一般的なベイジアンモデルを求めるた�
 ### Tutorial
 
 
-
-参考文献
-[NUTSとハミルトニアンモンテカルロ法](https://drive.google.com/file/d/0Bw-J75fYQ33NaWxjb2VwMDU4cjg/view)
 
 
 ## The Mamba Package
